@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>App Track Me</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+<body>
+    <h1 class="title">Welcome to Your Application Tracker</h1>
+
+    <button id="signupBtn" onclick="openForm()">Create Account</button>
+    
+    
+
+    <hr/>
+    <form method="POST" action="/login" id="loginForm">
+        <h3>Please Sign In</h3>
+        <label for="userEmail">Email:</label>
+        <input id="userEmail" type="text" placeholder="Enter Your Email" name="email" autocomplete="on"></input>
+        <label for="userPassword">Password:</label>
+        <input id="userPassword" type="password" placeholder="Enter Your Password" name="password" autocomplete="on"></input>
+        <button id="loginBtn" type="submit">Login In</button>
+    </form>
+    <hr/>
+    
+
+<div  class="popup">
+    <div class="formPopup" id="popupForm">
+        <form method="POST" action="/index.js" class="form-container">
+            <h2>Create New Account</h2>
+            
+            <label for="email">Email</label>
+            <input type="text" placeholder="Enter Your Email" name="email" autocomplete="on" id="email">
+
+            <label for="password">Password</label>
+            <input type="password" placeholder="Enter Your Password" name="password" autocomplete="on" id="password">
+
+            <button type="submit" id="newAccount">Signup!</button>
+            <button type="cutton" class="cancel-btn" onclick="closeForm()">Cancel</button>
+        </form>
+        
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
+
+<!-- action="/login" -->
+
+<!-- <button id="registerBtn" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Create Account</button> -->

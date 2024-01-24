@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Track Me</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Job Applications</h1>
+    <button id="logout-button">Logout</button>
+    
+    <div> 
+        
+        <form id="newApplicationInput">
+            <h3>Add New Application</h3>
+            <label for="date">Date:</label>
+            <input type='date' id="apply_date" placeholder="Date Applied" name="date"/>
+            
+            <label for="website">Company Website:</label>
+            <input id="position_url" type="text" placeholder="Company Website" name="website" autocomplete="on"></input>
+           
+            <label for="name">Company Name:</label>
+            <input id="company_name" type="text" placeholder="Company Name" name="name" autocomplete="on"></input>
+
+            <label for="position">Position Title:</label>
+            <input id="title" type="text" placeholder="Position Title" name="position" autocomplete="on"></input>
+
+            <label for="notes">Notes:</label>
+            <input id="user_notes" type="text" placeholder="Notes" name="notes" autocomplete="on"></input>
+<!--         
+                <p>Company Website</p><input 
+                type='text'
+                id="position_url"
+                placeholder='Company Website'/><br> -->
+            <button id="appBtn">Add Application</button>
+        </form>
+    </div>
+    
+    <main>
+        <h2>Submittd Applications</h2>
+        <section id="application-section"></section>
+    </main>
+    
+    <!-- <div>
+        <h1>Upload Resume</h1>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <label for="resume-upload">Resume</label>
+            <input id="resume-upload" name="resume-upload" type="file" required>
+            <button>Upload</button>
+        </form>
+    </div> -->
+    
+         <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="account.js"></script>
+</body>
+</html>
+
+<!-- will need their own js file (loggedin.js) -->
+<!-- get request to get users data on page -->
