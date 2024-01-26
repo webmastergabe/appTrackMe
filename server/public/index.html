@@ -12,7 +12,7 @@
     </head>
 
 <body>
-    <h1 class="title">Welcome to Your Application Tracker</h1>
+    <h1 class="title">Welcome to App Track Me</h1>
 
     <button id="signupBtn" onclick="openForm()">Create Account</button>
     
@@ -32,7 +32,7 @@
 
 <div  class="popup">
     <div class="formPopup" id="popupForm">
-        <form method="POST" action="/index.js" class="form-container">
+        <form method="POST" action="/signup" class="form-container">
             <h2>Create New Account</h2>
             
             <label for="email">Email</label>
@@ -42,7 +42,7 @@
             <input type="password" placeholder="Enter Your Password" name="password" autocomplete="on" id="password">
 
             <button type="submit" id="newAccount">Signup!</button>
-            <button type="cutton" class="cancel-btn" onclick="closeForm()">Cancel</button>
+            <button type="button" class="cancel-btn" onclick="closeForm()">Cancel</button>
         </form>
         
     </div>

@@ -49,6 +49,9 @@ app.get('/account', (req, res) => { //read cookie from the request
   }
 });
 
+app.post('/newApp', addApplication)
+
+
 // app.post('/upload', upload.single('file', (req, res) => {
 //   res.json({ message: 'File uploaded successfully!'});
 // }));
@@ -58,7 +61,7 @@ app.get('/account', (req, res) => { //read cookie from the request
 //  - this is for the edit button
 // app.put('/useraccount', editApp)
 
-app.post('/newApp', addApplication)
+
 // app.post('/account', (getAllApps))
 
 

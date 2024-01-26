@@ -31,15 +31,22 @@ module.exports = {
     newUser: (req, res) => {
         let {email, password} = req.body;
             console.log(req.body)
+            
+        
         if (email.length === 0 || password.length === 0) {
-            res.status(403).send('Invalid SignupS')
+            res.status(403).send('Invalid Signup')
             return
-        } 
+        }
         sequelize.query(`insert into users (email, password)
         values('${email}', '${password}');`)
             .then(dbRes => {
+                // console.log(dbRes)
+                // req.cookies['id']
+                // res.cookie('email', email)
+                // res.cookie('id', dbRes[0][0].id)
                 console.log('User Created')
                 res.status(200).send(dbRes[0])
+                
             }).catch(err => {
                 console.log('User not created', err);
                 res.status(500).send('internal server error')

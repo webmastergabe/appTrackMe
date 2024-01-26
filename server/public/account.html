@@ -12,26 +12,29 @@
 </head>
 
 <body>
-    <h1>Job Applications</h1>
-    <button id="logout-button">Logout</button>
+    <nav>
+        <h1>Track Your Apps</h1>
+        <button id="logout-button">Logout</button>
+    </nav>
     
     <div> 
         
         <form id="newApplicationInput">
             <h3>Add New Application</h3>
-            <label for="date">Date:</label>
-            <input type='date' id="apply_date" placeholder="Date Applied" name="date"/>
-            
-            <label for="website">Company Website:</label>
-            <input id="position_url" type="text" placeholder="Company Website" name="website" autocomplete="on"></input>
-           
-            <label for="name">Company Name:</label>
+
+            <label for="company_name">Company Name:</label>
             <input id="company_name" type="text" placeholder="Company Name" name="name" autocomplete="on"></input>
 
-            <label for="position">Position Title:</label>
+            <label for="apply_date">Date:</label>
+            <input type='date' id="apply_date" placeholder="Date Applied" name="date"/>
+            
+            <label for="position_url">Company Website:</label>
+            <input id="position_url" type="text" placeholder="Company Website" name="website" autocomplete="on"></input>
+
+            <label for="title">Position Title:</label>
             <input id="title" type="text" placeholder="Position Title" name="position" autocomplete="on"></input>
 
-            <label for="notes">Notes:</label>
+            <label for="user_notes">Notes:</label>
             <input id="user_notes" type="text" placeholder="Notes" name="notes" autocomplete="on"></input>
 <!--         
                 <p>Company Website</p><input 
@@ -43,8 +46,10 @@
     </div>
     
     <main>
-        <h2>Submittd Applications</h2>
-        <section id="application-section"></section>
+        <section id="application-section">
+            <h2>Submitted Applications</h2>
+            <hr/>
+        </section>
     </main>
     
     <!-- <div>

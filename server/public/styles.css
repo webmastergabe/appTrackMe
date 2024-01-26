@@ -8,18 +8,24 @@ orange: #F6921E */
 }
 
 h1 {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+nav {
     padding: 10px;
     /* width: 100%; */
-    text-align: center;
+    
     background-color: #301934;
     color: white;
     margin-bottom: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    
+    
 }
 
-h2 h3 {
+h3 {
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -32,6 +38,9 @@ hr {
 
 #logout-button {
   float: right;
+  /* opacity: 0.2; */
+  border: 2px #301934 solid;
+  font-weight: bold;
 }
 
 #signupBtn {
@@ -157,5 +166,9 @@ hr {
         border: 3px solid #999999;
         padding: 10px;
         margin: 10px;
+        text-align: center;
+      }
+
+      h2 {
         text-align: center;
       }
